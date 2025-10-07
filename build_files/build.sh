@@ -34,11 +34,6 @@ dnf5 install -y \
 
 	# gimp, libreoffice, simple-scan
 
-### remove preinstalled flatpaks and all runtimes
-
- flatpak uninstall --all -y
-
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
