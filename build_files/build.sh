@@ -36,7 +36,7 @@ dnf5 install -y \
 
 ### remove preinstalled flatpaks and all runtimes
 
-# flatpak uninstall --all -y
+ flatpak uninstall --all -y
 
 
 # Use a COPR Example:
