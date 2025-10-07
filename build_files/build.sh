@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -10,8 +11,33 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y neovim \
-	foot
+dnf5 install -y \
+	bat \
+	cmake \
+	foot \
+	gdb \
+	gdm \
+	gnome-calculator \
+	gnome-session \
+	gnome-shell \
+	gnome-system-monitor \
+	jetbrains-mono-fonts-all \
+	nautilus \
+	neovim \
+	netstat-monitor \
+	ptyxis \
+	tldr \
+	zoxide \
+	zsh \
+	zsh-autosuggestions \
+	zsh-syntax-highlighting 
+
+	# gimp, libreoffice, simple-scan
+
+### remove preinstalled flatpaks and all runtimes
+
+flatpak uninstall --all --delete-data -y
+
 
 # Use a COPR Example:
 #
