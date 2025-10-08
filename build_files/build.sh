@@ -13,6 +13,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y \
 	bat \
+	clang \
 	cmake \
 	foot \
 	gdb \
@@ -21,6 +22,7 @@ dnf5 install -y \
 	gnome-session \
 	gnome-shell \
 	gnome-system-monitor \
+	gnome-tweaks \
 	jetbrains-mono-fonts-all \
 	nautilus \
 	neovim \
